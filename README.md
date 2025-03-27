@@ -14,6 +14,18 @@ We need two Dockerfiles:
 1. Dockerfile to build and run the kitchensink node
 2. Dockerfile to build and run Eth RPC proxy
 
+#### How to use
+
+Build the docker image:
+```
+docker build -t polkadot-kitchensink .
+```
+
+Run the container:
+```
+docker run -p 9944:9944 -p 9933:9933 -p 30333:30333 polkadot-kitchensink
+```
+
 #### Funding avenue:
 - We can ask to OpenGov or bounties to help maintain these Dockerfiles
 
